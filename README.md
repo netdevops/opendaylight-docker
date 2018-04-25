@@ -26,12 +26,12 @@ docker pull networkoverlay/opendaylight
 ### from Github
 If you built the image from the `Dockerfile`:
 ```
-docker run -itd -e 8181:8181 -e 8101:8101 --name odl opendaylight:latest
+docker run -itd -p 8181:8181 -p 8101:8101 --name odl opendaylight:latest
 ```
 
 ### from Docker Hub
 If you pulled the image from docker hub:
 ```
-docker run -itd -e 8181:8181 -e 8101:8101 --name odl networkoverlay/opendaylight:latest
+docker run -itd -p 8181:8181 -p 8101:8101 --name odl networkoverlay/opendaylight:latest
 ```
 
